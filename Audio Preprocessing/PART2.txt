@@ -1,0 +1,18 @@
+- data, rate = sf.read("noisy.wav")
+Python knows what goes into data and what goes into rate because the sf.read() function is designed to return exactly two values in order:
+*First value: the audio data (the sound samples)
+*Second value: the sample rate (how many samples per second)
+
+- MFCC (Mel-Frequency Cepstral Coefficients)
+* MFCC is a way to turn sound into a set of numbers.
+* It captures the important patterns of human speech.
+* Models use MFCCs instead of raw audio because it compresses what’s most useful for understanding speech.
+Why do models use MFCC?
+*Simplifies audio: Only keeps features important for recognizing voices.
+*Matches how humans hear: Focuses on frequency bands people use when talking.
+
+In Summary
+Noise removal makes sound clear.
+Normalization evens out volume.
+MP3 to WAV converts format for model use.
+MFCC shrinks audio to useful speech features for machine learning.
